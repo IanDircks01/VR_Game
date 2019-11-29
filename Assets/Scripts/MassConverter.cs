@@ -7,7 +7,7 @@ public class MassConverter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //Debug.Log(MassConvert(0.81284436f));
     }
 
     // Update is called once per frame
