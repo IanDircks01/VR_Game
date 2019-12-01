@@ -17,9 +17,16 @@ public class MagController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Unload()
     {
-        
+        if (IsLoaded == true)
+        {
+            Destroy(Bullet);
+            IsLoaded = false;
+        }
+        else
+        {
+            Debug.LogWarning("Gun is already unloaded");
+        }
     }
 }
