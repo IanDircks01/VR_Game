@@ -5,6 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public bool PlayOnStart;
+
+    [Range(0.0f, 1.0f)]
+    public float MenuMusicVolume = 0.5f;
+
+    public AudioSource AS;
+    public AudioClip AC;
+
+    void Start()
+    {
+        AS.clip = AC;
+        AS.volume = MenuMusicVolume;
+        if (PlayOnStart == true)
+        {
+            AS.Play();
+        }
+    }
+
     public void GotoScene(int SceneNumber)
     {
         StartCoroutine(LoadSceneAsynchronous(SceneNumber));

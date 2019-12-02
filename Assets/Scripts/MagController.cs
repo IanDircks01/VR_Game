@@ -8,6 +8,8 @@ public class MagController : MonoBehaviour
 
     public GameObject Bullet;
 
+    public Rigidbody RB;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +19,27 @@ public class MagController : MonoBehaviour
         }
     }
 
+    public void Load()
+    {
+        if (IsLoaded == false)
+        {
+            IsLoaded = true;
+            RB.isKinematic = false;
+            RB.useGravity = false;
+        } else
+        {
+            Debug.LogWarning("Gun is already loaded");
+        }
+    }
+
     public void Unload()
     {
         if (IsLoaded == true)
         {
             Destroy(Bullet);
             IsLoaded = false;
+            RB.isKinematic = false;
+            RB.useGravity = true;
         }
         else
         {
