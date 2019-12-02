@@ -282,6 +282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 2
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!1 &183177852
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 5
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!114 &183177859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 89
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!114 &227940674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,6 +1240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 197.6
   RB: {fileID: 627058083}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!1 &705138385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8058095660655891070, guid: 270d8414c16a1ca4ea7a1060c55a491a,
@@ -1752,6 +1760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 20
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!65 &883201998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2286,6 +2296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 135
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!114 &1148175450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3167,6 +3179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 1.32
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!1 &1511302530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,6 +3375,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 5
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!1 &2078414031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 250
   RB: {fileID: 227940672}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!65 &2096655471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3896,6 +3914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 2.5
   RB: {fileID: 689730013455582933}
+  PM: {fileID: 0}
+  colliders: []
 --- !u!114 &689730013455582932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3924,11 +3944,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 1
 --- !u!65 &689730013455582934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4125,6 +4145,7 @@ MonoBehaviour:
   PointerSP: {fileID: 733829800}
   ShowPointerLine: 1
   PointerDistance: 100
+  layermask: 256
   PointerColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!33 &707017089429099745
 MeshFilter:
@@ -5006,7 +5027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689730013455582930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.303, y: 1.732, z: 5.329}
+  m_LocalPosition: {x: -4.303, y: 3.203, z: 2.134}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 1386671097892015279}
@@ -5506,6 +5527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 0.81284434
   RB: {fileID: 8323865149199662459}
+  PM: {fileID: 13400000, guid: acecac262b587d149bb1f2a7a7963f97, type: 2}
+  colliders: []
 --- !u!33 &8331523320532908736
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5592,6 +5615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weight: 25
   RB: {fileID: 8678998275089501998}
+  PM: {fileID: 13400000, guid: a9090c49b1a672f45a0c0e35b382a92b, type: 2}
+  colliders: []
 --- !u!54 &8678998275089501998
 Rigidbody:
   m_ObjectHideFlags: 0
